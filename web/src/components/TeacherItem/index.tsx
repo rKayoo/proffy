@@ -2,35 +2,55 @@ import React from 'react';
 
 import whatsappIcon from '../../assets/images/icons/whatsapp.svg';
 
+import api from '../../services/api';
+
 import './styles.css';
 
-function TeacherItem() {
+export interface Teacher {
+    id: number;
+    avatar: string;
+    bio: string;
+    cost: number;
+    name: string;
+    subject: string;
+    whatsapp: string;
+}
+
+interface TeacherItemProps {
+  teacher: Teacher
+}
+
+const TeacherItem: React.FC<TeacherItemProps> = ({ teacher }) => {
+  function createNewConnection() {
+    api.post('/connections', {
+      user_id: teacher.id,
+    })
+  }
   return (
     <article className="teacher-item">
           <header>
-            <img src="https://i.pinimg.com/originals/37/e3/c1/37e3c1a157bf5886ef0ef45b31fddd23.jpg" alt=""/>
+            <img src={teacher.avatar} alt={teacher.name}/>
             <div>
-              <strong>Hermione Granger</strong>
-              <span>Levitação</span>
+              <strong>{teacher.name}</strong>
+              <span>{teacher.subject}</span>
             </div>
           </header>
 
-          <p>
-            Ensino as pessoas a levitarem a objetos
-            <br/><br/>
-            Mudo a vida das pessoas pelo wingardium leviosa. Mais de mil bruxos aprenderam 
-            a levitar uma pena comigo. É LEVIOSA, e não leviosá.
-          </p>
+          <p>{teacher.bio}</p>
 
           <footer>
             <p>
               Preço/hora
-              <strong>R$ 100,00</strong>
+              <strong>R$ {teacher.cost}</strong>
             </p>
-            <button type="button">
+            <a 
+              target="_blank"
+              onClick={createNewConnection} 
+              href={`https://wa.me/${teacher.whatsapp}`}
+            >
               <img src={whatsappIcon} alt="Whatsapp"/>
               Entrar em contato
-            </button>
+            </a>
           </footer>
         </article>
   );
