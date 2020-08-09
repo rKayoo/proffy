@@ -25,17 +25,17 @@ Project was developed during the Next Level Week #2 offered by [Rocketseat](http
 
 ### 🖥 Web
 - Landing Page
-    <img src="./screenshots/landing-page.png"/ width="400px">
+    <img src="./screenshots/landing-page.png" width="70%">
     
 - Creating your profile
-    <img src="./screenshots/creating-form.png" width="400px">
+    <img src="./screenshots/creating-form.png" width="70%">
     
 - Looking for a professor
-    <img src="./screenshots/searching-page.png" width="400px"/>
+    <img src="./screenshots/searching-page.png" width="70%"/>
 
 ### 📱 Mobile
 - Landing Page
-    <img src="./screenshots/landing-mobile.png" height="400px/>
+    <img src="./screenshots/landing-mobile.png" height="400px"/>
     
 - Creating your profile
     <img src="./screenshots/creating-mobile.png" height="400px">
