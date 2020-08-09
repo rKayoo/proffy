@@ -37,6 +37,10 @@
   width: 90%;
 }
 
+#not-found {
+  margin-top: 5rem;
+}
+
 @media (min-width: 700px) {
   #page-teacher-list {
     max-width: 100%;

@@ -16,6 +16,8 @@ function TeacherList() {
   const [week_day, setWeekday] = useState('');
   const [time, setTime] = useState('');
 
+  const [search, setSearch] = useState(false);
+
   async function searchTeachers(e: FormEvent) {
     e.preventDefault();
 
@@ -28,6 +30,16 @@ function TeacherList() {
     });
 
     setTeachers(response.data)
+  }
+
+  function searching() {
+    setSearch(true); 
+  }
+
+  function teacherNotFound() {
+    if(teachers.length === 0 && search) {
+      return 'Professor não encontrado! Tente novamente.'
+    }
   }
 
   return (
@@ -73,11 +85,15 @@ function TeacherList() {
               onChange={e => { setTime(e.target.value) }}
             />
 
-            <button type="submit">Buscar</button>
+            <button 
+              type="submit"
+              onClick={searching}
+            >Buscar</button>
         </form>
       </PageHeader>
 
       <main>
+        <p id="not-found">{teacherNotFound()}</p>
         {teachers.map((teacher: Teacher) => {
           return <TeacherItem key={teacher.id} teacher={teacher} />
         })}
