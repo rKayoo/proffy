@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/RafaelGoulartB/Proffy/blob/master/.github/logo.png?raw=true"/>
+  <img src="https://raw.githubusercontent.com/rKayoo/proffy/6c82048b29900ed408eb26bb8ab3343ef4a12938/web/src/assets/images/landing.svg"/>
 </p>
 
 <h3 align="center">
@@ -25,21 +25,26 @@ Project was developed during the Next Level Week #2 offered by [Rocketseat](http
 
 ### 🖥 Web
 - Landing Page
-    <img src="./screenshots/landing-page.png"/>
+    <img src="./screenshots/landing-page.png"/ width="400px">
+    
 - Creating your profile
-    <img src="./screenshots/creating-form.png">
+    <img src="./screenshots/creating-form.png" width="400px">
+    
 - Looking for a professor
-    <img src="./screenshots/searching-page.png"/>
+    <img src="./screenshots/searching-page.png" width="400px"/>
 
 ### 📱 Mobile
 - Landing Page
-    <img src="./screenshots/landing-mobile.png"/>
+    <img src="./screenshots/landing-mobile.png" height="400px/>
+    
 - Creating your profile
-    <img src="./screenshots/creating-mobile.png">
+    <img src="./screenshots/creating-mobile.png" height="400px">
+    
 - Looking for a professor
-    <img src="./screenshots/searching-mobile.png"/>
+    <img src="./screenshots/searching-mobile.png" height="400px"/>
+    
 - Your favorite professor
-    <img src="./screenshots/favorites-mobile.png"/>
+    <img src="./screenshots/favorites-mobile.png" height="400px"/>
 
 ## 📥 Getting Started
 <p>
