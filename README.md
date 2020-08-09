@@ -24,26 +24,26 @@ Project was developed during the Next Level Week #2 offered by [Rocketseat](http
 ## 📸 Screenshots
 
 ### 🖥 Web
-- Landing Page
+- Landing Page<br/> <br/>
     <img src="./screenshots/landing-page.png" width="70%">
     
-- Creating your profile
+- Creating your profile<br/> <br/>
     <img src="./screenshots/creating-form.png" width="70%">
     
-- Looking for a professor
+- Looking for a professor<br/> <br/>
     <img src="./screenshots/searching-page.png" width="70%"/>
 
 ### 📱 Mobile
-- Landing Page
+- Landing Page<br/> <br/>
     <img src="./screenshots/landing-mobile.png" height="400px"/>
     
-- Creating your profile
+- Creating your profile<br/> <br/>
     <img src="./screenshots/creating-mobile.png" height="400px">
     
-- Looking for a professor
+- Looking for a professor<br/> <br/>
     <img src="./screenshots/searching-mobile.png" height="400px"/>
     
-- Your favorite professor
+- Your favorite professor<br/> <br/>
     <img src="./screenshots/favorites-mobile.png" height="400px"/>
 
 ## 📥 Getting Started
